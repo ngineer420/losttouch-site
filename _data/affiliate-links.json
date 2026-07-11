@@ -1,0 +1,64 @@
+{
+  "_comment": "Central affiliate link registry for losttou.ch. Each entry has a plain (non-affiliate) destination URL and an optional tracking tag. See README.md 'Swapping in your real Amazon Associates tag' for exact instructions. Leave amazonTag empty until your Associates application is approved -- js/affiliate.js will only append tracking parameters once a tag is present.",
+
+  "keepsake-box": {
+    "label": "wooden keepsake memory box",
+    "url": "https://www.amazon.com/s?k=wooden+keepsake+memory+box",
+    "amazonTag": ""
+  },
+  "photo-scanner": {
+    "label": "photo and slide scanner",
+    "url": "https://www.amazon.com/s?k=photo+slide+scanner",
+    "amazonTag": ""
+  },
+  "acid-free-photo-album": {
+    "label": "acid-free archival photo album",
+    "url": "https://www.amazon.com/s?k=acid+free+archival+photo+album",
+    "amazonTag": ""
+  },
+  "letter-writing-set": {
+    "label": "letter-writing stationery set",
+    "url": "https://www.amazon.com/s?k=letter+writing+stationery+set",
+    "amazonTag": ""
+  },
+  "wax-seal-kit": {
+    "label": "wax seal stamp kit",
+    "url": "https://www.amazon.com/s?k=wax+seal+stamp+kit",
+    "amazonTag": ""
+  },
+  "fountain-pen": {
+    "label": "beginner fountain pen",
+    "url": "https://www.amazon.com/s?k=beginner+fountain+pen",
+    "amazonTag": ""
+  },
+  "voice-recorder": {
+    "label": "handheld voice recorder for oral histories",
+    "url": "https://www.amazon.com/s?k=handheld+voice+recorder",
+    "amazonTag": ""
+  },
+  "external-hard-drive": {
+    "label": "external hard drive for photo backups",
+    "url": "https://www.amazon.com/s?k=external+hard+drive+backup",
+    "amazonTag": ""
+  },
+  "photo-book-printing": {
+    "label": "custom printed photo book service",
+    "url": "https://www.amazon.com/s?k=custom+photo+book",
+    "amazonTag": ""
+  },
+  "memory-jar": {
+    "label": "memory jar kit",
+    "url": "https://www.amazon.com/s?k=memory+jar+kit",
+    "amazonTag": ""
+  },
+  "polaroid-camera": {
+    "label": "instant film camera",
+    "url": "https://www.amazon.com/s?k=instant+film+camera",
+    "amazonTag": ""
+  },
+  "care-package-box": {
+    "label": "build-your-own care package box",
+    "url": "https://www.amazon.com/s?k=care+package+box+kit",
+    "amazonTag": ""
+  }
+}
