@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="An open journal or memory-keeping app">
+  <path d="M32 16 C26 12 16 12 10 15 L10 46 C16 43 26 43 32 47 C38 43 48 43 54 46 L54 15 C48 12 38 12 32 16 Z" fill="#fffdf8" stroke="#b5502e" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="32" y1="16" x2="32" y2="47" stroke="#b5502e" stroke-width="2.5"/>
+  <line x1="16" y1="22" x2="26" y2="20" stroke="#e4d8c3" stroke-width="2"/>
+  <line x1="16" y1="28" x2="26" y2="26" stroke="#e4d8c3" stroke-width="2"/>
+  <path d="M42 10 L50 10 L50 26 L46 22 L42 26 Z" fill="#c8952e"/>
+</svg>

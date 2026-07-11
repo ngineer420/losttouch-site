@@ -162,6 +162,42 @@ hr {
   margin: 0 auto;
 }
 
+.hero-image {
+  max-width: 480px;
+  margin: 2.25rem auto 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-icon, .article-icon {
+  border-radius: 50%;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.card-icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 0.9rem;
+}
+
+.card-icon img { width: 28px; height: 28px; }
+
+.article-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1.25rem;
+}
+
+.article-icon img { width: 36px; height: 36px; }
+
 /* Article grid on homepage */
 .article-grid {
   display: grid;

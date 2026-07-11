@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="A wrapped gift">
+  <rect x="12" y="26" width="40" height="28" fill="#fffdf8" stroke="#b5502e" stroke-width="3"/>
+  <rect x="12" y="26" width="40" height="10" fill="#e4d8c3" stroke="#b5502e" stroke-width="3"/>
+  <line x1="32" y1="26" x2="32" y2="54" stroke="#8c3c22" stroke-width="3"/>
+  <path d="M32 26 C26 18 18 18 20 12 C24 10 30 16 32 26 Z" fill="#c8952e"/>
+  <path d="M32 26 C38 18 46 18 44 12 C40 10 34 16 32 26 Z" fill="#c8952e"/>
+</svg>
