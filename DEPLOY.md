@@ -76,10 +76,10 @@ get rejected.
 5. Once approved, you'll be issued a tracking ID that looks like
    `yourname-20`.
 6. Open `_data/affiliate-links.json` in this repo and paste that tracking
-   ID into the `"amazonTag"` field for each product you want to monetize.
-   Commit and push — see the README's "Swapping in your real Amazon
-   Associates tag" section for the full walkthrough. No other files need
-   to change.
+   ID into the top-level `"amazonTagGlobal"` field — one edit activates
+   every product on the site. Commit and push — see the README's "Swapping
+   in your real Amazon Associates tag" section for the full walkthrough. No
+   other files need to change.
 7. Double check `affiliate-disclosure.html` still accurately describes
    your participation status (it's already written to be accurate both
    before and after approval, but re-read it once you're live to be sure).

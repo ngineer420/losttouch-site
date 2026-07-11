@@ -59,25 +59,27 @@ Every affiliate mention in an article is written as a normal, working,
 
 The `data-affiliate="keepsake-box"` attribute is a lookup key into
 [`_data/affiliate-links.json`](_data/affiliate-links.json), which holds the
-canonical destination URL and (once you have one) your Amazon Associates
-tracking tag for every product mentioned on the site:
+canonical destination URL for every product mentioned on the site, plus a
+single top-level Amazon Associates tracking tag shared by every entry:
 
 ```json
+"amazonTagGlobal": "yourtag-20",
+
 "keepsake-box": {
   "label": "wooden keepsake memory box",
-  "url": "https://www.amazon.com/s?k=wooden+keepsake+memory+box",
-  "amazonTag": ""
+  "url": "https://www.amazon.com/s?k=wooden+keepsake+memory+box"
 }
 ```
 
 On every page load, [`js/affiliate.js`](js/affiliate.js) fetches that JSON
-file and, **only if `amazonTag` is non-empty**, appends `?tag=your-tag-here`
-(or `&tag=...` if the URL already has query params) to the link's href. If
-`amazonTag` is empty, as it is by default, the link is left exactly as
-written in the HTML — a plain, functional, non-monetized link. This means
-the site is fully compliant and non-broken both before and after your
-Associates application is approved, and you never have to touch article
-HTML to turn monetization on.
+file and, **only if `amazonTagGlobal` is non-empty**, appends
+`?tag=your-tag-here` (or `&tag=...` if the URL already has query params) to
+every affiliate link's href. If `amazonTagGlobal` is empty, as it is by
+default, links are left exactly as written in the HTML — plain, functional,
+non-monetized links. This means the site is fully compliant and non-broken
+both before and after your Associates application is approved, and you
+never have to touch article HTML or per-product entries to turn
+monetization on.
 
 ### Swapping in your real Amazon Associates tag
 
@@ -85,21 +87,26 @@ Once your Amazon Associates application is approved (see `DEPLOY.md` for
 when/how to apply):
 
 1. Open `_data/affiliate-links.json`.
-2. For each product you want to monetize, set `"amazonTag"` to your actual
-   Associates tracking ID (it looks like `yourtag-20`).
-3. Commit and push. That's it — every article mentioning that product will
-   automatically start using your tracked link on the next page load. No
-   HTML changes needed.
+2. Set the top-level `"amazonTagGlobal"` to your actual Associates tracking
+   ID (it looks like `yourtag-20`).
+3. Commit and push. That's it — this single change updates every affiliate
+   link across every article on the next page load. No HTML changes needed,
+   and nothing to repeat per product.
 4. If you add a new product mention in a future article, add a new entry
-   to this same JSON file with a short `data-affiliate` key, and reference
-   that key from the new `<a data-affiliate="...">` link in the article.
+   to this same JSON file with a short `data-affiliate` key (just a
+   `"label"` and `"url"` — it picks up `amazonTagGlobal` automatically), and
+   reference that key from the new `<a data-affiliate="...">` link in the
+   article.
+5. (Optional) If a specific product should use a *different* tag or
+   program, add an `"amazonTag"` field to that one entry — it overrides the
+   global tag for that link only.
 
 ### Adding a new affiliate program (beyond Amazon)
 
 The same pattern works for any affiliate network. Add a new field (e.g.
 `"shareASaleId"`) to an entry in the JSON file, and extend the logic in
 `js/affiliate.js` to build that network's tracked URL format the same way
-it currently handles `amazonTag`.
+it currently handles `amazonTag`/`amazonTagGlobal`.
 
 ## Local preview
 
