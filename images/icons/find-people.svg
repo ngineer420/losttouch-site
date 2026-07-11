@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="A magnifying glass finding a person">
+  <circle cx="27" cy="27" r="15" fill="#fffdf8" stroke="#b5502e" stroke-width="3"/>
+  <line x1="38" y1="38" x2="53" y2="53" stroke="#8c3c22" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="27" cy="22" r="4" fill="#c8952e"/>
+  <path d="M19 33 c0 -6 16 -6 16 0 z" fill="#c8952e"/>
+</svg>

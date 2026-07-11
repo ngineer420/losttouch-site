@@ -60,5 +60,15 @@
     "label": "build-your-own care package box",
     "url": "https://www.amazon.com/s?k=care+package+box+kit",
     "amazonTag": ""
+  },
+  "conversation-cards": {
+    "label": "family conversation starter card deck",
+    "url": "https://www.amazon.com/s?k=family+conversation+starter+cards",
+    "amazonTag": ""
+  },
+  "reunion-guest-book": {
+    "label": "photo guest book for reunions and gatherings",
+    "url": "https://www.amazon.com/s?k=photo+guest+book",
+    "amazonTag": ""
   }
 }
