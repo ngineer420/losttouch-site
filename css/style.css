@@ -117,6 +117,44 @@ h3 { font-size: 1.15rem; margin-top: 1.75rem; }
   margin-bottom: 1.5rem;
 }
 
+.freshness {
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  opacity: 0.85;
+  margin: -1rem 0 1.5rem;
+}
+
+.faq-section h3 {
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.faq-section p {
+  margin-top: 0;
+}
+
+.related-articles {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.related-articles li {
+  margin-bottom: 0.6rem;
+}
+
+.related-articles a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.related-articles a:hover {
+  color: var(--rust);
+}
+
 .lede {
   font-size: 1.15rem;
   color: var(--ink-soft);
