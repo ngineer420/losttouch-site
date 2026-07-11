@@ -11,14 +11,18 @@
  *      <a href="https://www.amazon.com/s?k=keepsake+box"
  *         class="affiliate-link" data-affiliate="keepsake-box">a keepsake box</a>
  *   2. This script fetches /_data/affiliate-links.json.
- *   3. If the matching entry has a non-empty "amazonTag", the tag is
- *      appended to the link's existing href as a `tag=` query parameter.
- *   4. If "amazonTag" is empty (the default), links are left exactly as
- *      written in the HTML -- plain, non-monetized, fully functional.
+ *   3. Every entry uses the top-level "amazonTagGlobal" tag automatically.
+ *      A tag is appended to the link's existing href as a `tag=` query
+ *      parameter. An entry only needs its own "amazonTag" field if it
+ *      should use a *different* tag (e.g. a different affiliate program).
+ *   4. If no tag applies (global tag empty and no per-entry override),
+ *      links are left exactly as written in the HTML -- plain,
+ *      non-monetized, fully functional.
  *
  * To go live with real Amazon Associates tracking, you do NOT need to
- * touch any article HTML. Just fill in "amazonTag" for each product in
- * _data/affiliate-links.json. See README.md for the full walkthrough.
+ * touch any article HTML or any per-product entry. Just set
+ * "amazonTagGlobal" once in _data/affiliate-links.json. See README.md for
+ * the full walkthrough.
  */
 (function () {
   function addTag(url, tag) {
@@ -42,11 +46,13 @@
       .then(function (res) { return res.ok ? res.json() : null; })
       .then(function (data) {
         if (!data) return;
+        var globalTag = data.amazonTagGlobal;
         links.forEach(function (el) {
           var key = el.getAttribute('data-affiliate');
           var entry = data[key];
-          if (entry && entry.amazonTag) {
-            el.setAttribute('href', addTag(entry.url, entry.amazonTag));
+          var tag = entry && (entry.amazonTag || globalTag);
+          if (entry && tag) {
+            el.setAttribute('href', addTag(entry.url, tag));
           }
           el.setAttribute('rel', 'sponsored noopener');
         });

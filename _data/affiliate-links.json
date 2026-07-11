@@ -1,74 +1,62 @@
 {
-  "_comment": "Central affiliate link registry for losttou.ch. Each entry has a plain (non-affiliate) destination URL and an optional tracking tag. See README.md 'Swapping in your real Amazon Associates tag' for exact instructions. Leave amazonTag empty until your Associates application is approved -- js/affiliate.js will only append tracking parameters once a tag is present. URLs are Amazon searches for a specific, currently-sold product (rather than a bare category search or a hardcoded product-page/ASIN link) so they stay precise but don't go dead when a specific listing is discontinued.",
+  "_comment": "Central affiliate link registry for losttou.ch. Each entry has a plain (non-affiliate) destination URL. See README.md 'Swapping in your real Amazon Associates tag' for exact instructions. Leave amazonTagGlobal empty until your Associates application is approved -- js/affiliate.js will only append tracking parameters once a tag is present. URLs are Amazon searches for a specific, currently-sold product (rather than a bare category search or a hardcoded product-page/ASIN link) so they stay precise but don't go dead when a specific listing is discontinued.",
+
+  "amazonTagGlobal": "ngineer420-20",
 
   "keepsake-box": {
     "label": "wooden keepsake box with a photo-frame lid",
-    "url": "https://www.amazon.com/s?k=wooden+keepsake+memory+box+with+photo+frame+lid",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=wooden+keepsake+memory+box+with+photo+frame+lid"
   },
   "photo-scanner": {
     "label": "Epson Perfection V600 photo scanner",
-    "url": "https://www.amazon.com/s?k=Epson+Perfection+V600+photo+scanner",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=Epson+Perfection+V600+photo+scanner"
   },
   "acid-free-photo-album": {
     "label": "Pioneer acid-free archival photo album",
-    "url": "https://www.amazon.com/s?k=Pioneer+Photo+Albums+acid+free+archival",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=Pioneer+Photo+Albums+acid+free+archival"
   },
   "letter-writing-set": {
     "label": "Crane & Co. cotton paper stationery set",
-    "url": "https://www.amazon.com/s?k=Crane+%26+Co+cotton+paper+stationery+set",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=Crane+%26+Co+cotton+paper+stationery+set"
   },
   "wax-seal-kit": {
     "label": "Anezus wax seal stamp kit",
-    "url": "https://www.amazon.com/s?k=Anezus+wax+seal+stamp+kit",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=Anezus+wax+seal+stamp+kit"
   },
   "fountain-pen": {
     "label": "Pilot Metropolitan fountain pen",
-    "url": "https://www.amazon.com/s?k=Pilot+Metropolitan+fountain+pen",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=Pilot+Metropolitan+fountain+pen"
   },
   "voice-recorder": {
     "label": "Sony ICD-UX570 digital voice recorder",
-    "url": "https://www.amazon.com/s?k=Sony+ICD-UX570+digital+voice+recorder",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=Sony+ICD-UX570+digital+voice+recorder"
   },
   "external-hard-drive": {
     "label": "WD My Passport external hard drive",
-    "url": "https://www.amazon.com/s?k=WD+My+Passport+external+hard+drive",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=WD+My+Passport+external+hard+drive"
   },
   "photo-book-printing": {
     "label": "Mixbook custom photo book",
-    "url": "https://www.amazon.com/s?k=Mixbook+custom+photo+book",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=Mixbook+custom+photo+book"
   },
   "memory-jar": {
     "label": "Top Shelf Love Notes memory jar kit",
-    "url": "https://www.amazon.com/s?k=Top+Shelf+Love+Notes+memory+jar+kit",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=Top+Shelf+Love+Notes+memory+jar+kit"
   },
   "polaroid-camera": {
     "label": "Fujifilm Instax Mini 12 instant camera",
-    "url": "https://www.amazon.com/s?k=Fujifilm+Instax+Mini+12+instant+camera",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=Fujifilm+Instax+Mini+12+instant+camera"
   },
   "care-package-box": {
     "label": "reusable magnetic-lid gift box for a care package",
-    "url": "https://www.amazon.com/s?k=magnetic+lid+gift+box+with+lid+care+package",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=magnetic+lid+gift+box+with+lid+care+package"
   },
   "conversation-cards": {
     "label": "TableTopics Family conversation cards",
-    "url": "https://www.amazon.com/s?k=TableTopics+Family+conversation+starters",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=TableTopics+Family+conversation+starters"
   },
   "reunion-guest-book": {
     "label": "Family Reunion Guest Book",
-    "url": "https://www.amazon.com/s?k=Family+Reunion+Guest+Book+memory+book",
-    "amazonTag": ""
+    "url": "https://www.amazon.com/s?k=Family+Reunion+Guest+Book+memory+book"
   }
 }
