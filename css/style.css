@@ -172,6 +172,43 @@ hr {
   height: auto;
 }
 
+/* Real photography, layered on top of the hand-drawn SVG icons */
+.hero-photo {
+  max-width: 640px;
+  margin: 1.75rem auto 0;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 18px rgba(51, 41, 31, 0.08);
+}
+
+.article-photo {
+  margin: 1.25rem 0 1.75rem;
+}
+
+.article-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+.photo-credit {
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  margin-top: 0.4rem;
+  opacity: 0.85;
+}
+
+.photo-credit a {
+  color: var(--ink-soft);
+}
+
 .card-icon, .article-icon {
   border-radius: 50%;
   background: var(--cream);
