@@ -19,7 +19,7 @@ css/style.css                  All site styling (no framework)
 js/affiliate.js                Loads _data/affiliate-links.json and adds
                                 tracking tags to affiliate links, if present
 _data/affiliate-links.json     Central registry of affiliate link targets
-articles/*.html                The eleven guides (see below)
+articles/*.html                The seventeen guides (see below)
 ```
 
 No build step, no npm, no Jekyll required — every file here is served
@@ -45,6 +45,18 @@ as-is by GitHub Pages.
     info online without being creepy
 11. `articles/deceased-loved-one-letters-photos.html` — What to do with a
     deceased loved one's letters and photos
+12. `articles/reconnecting-with-former-mentor.html` — How to reconnect with
+    a former mentor or teacher
+13. `articles/what-to-say-at-a-reunion.html` — What to say at a reunion
+    when it's been twenty years
+14. `articles/digitizing-old-letters-photos.html` — How to digitize old
+    letters and photos without ruining them
+15. `articles/grief-anniversaries-remembrance.html` — Grief anniversaries:
+    small rituals for the days that hit hardest
+16. `articles/rebuilding-friendship-after-falling-out.html` — How to
+    rebuild a friendship after a falling-out
+17. `articles/staying-in-touch-after-reconnecting.html` — How to stay in
+    touch after you've reconnected
 
 ## How affiliate links work on this site
 
